@@ -1,0 +1,136 @@
+
+body{
+    background-color: blue;
+}
+
+.container{
+   position: absolute;
+   width: 700px; 
+   height: 700px;
+   left: calc(50% - 350px);
+   /* background-color: rgba(0, 255, 255, 0.925); */
+   transform: skew(45deg);
+   
+}
+.container1{
+    position: absolute;
+    width: 700px; 
+    height: 700px;
+    left: calc(50% - 350px);
+    /* background-color: rgba(0, 255, 255, 0.219); */
+    transform: skew(-45deg);
+    
+ }
+ .container2{
+    position: absolute;
+    width: 700px; 
+    height: 700px;
+    left: calc(50% - 350px);
+    /* background-color: rgba(0, 255, 255, 0.219); */
+    transform: scale(0.7,1.5);
+    
+ }
+
+
+.container__containt{
+    position: absolute;
+    left: calc(50% - 250px);
+    top: 100px;
+    width: 500px;
+    height:500px;
+    border: 15px solid rgba(160, 81, 45, 0.986);
+    border-radius: 270px;
+    
+    
+}
+.container1__containt1{
+    position: absolute;
+    left: calc(50% - 250px);
+    top: 100px;
+    width: 500px;
+    height:500px;
+    border: 15px solid rgba(160, 81, 45, 0.986);
+    border-radius: 270px;
+    
+    
+}
+.container2__containt2{
+    position: absolute;
+    left: calc(50% - 250px);
+    top: 100px;
+    width: 500px;
+    height:500px;
+    border: 15px solid rgba(160, 81, 45, 0.986);
+    border-radius: 270px;
+    
+    
+}
+
+
+.container__containt {
+    
+   animation: name-rot 4s linear 0s infinite;
+   
+}
+.container1__containt1{
+    animation: name-rot 3s linear 0s infinite;
+}
+.container2__containt2{
+    animation: name-rot 5s linear 0s infinite;
+}
+
+
+
+.containt__circle{
+  position: absolute;
+  top: 80px;
+  width: 50px;
+  height: 50px;
+  background-color: brown;
+  border: 5px solid rgb(17, 17, 16);
+  border-radius: 30px;
+  transform-style: preserve-3d;
+  /* transform: rotate(90deg); */
+  /* animation: name-rot2 5s linear 0s infinite;  */
+  
+}
+@keyframes name-rot {
+    from{
+        
+        transform: rotate(0deg) ;
+        
+    }
+    to{
+        
+        transform: rotate(360deg)  ;
+        
+    }
+    
+}
+
+@keyframes name-rot2 {
+    from{
+        
+        transform: rotate(60deg) ;
+        
+    }
+    to{
+        
+        transform: rotate(420deg)  ;
+        
+    }
+    
+}
+@keyframes name-rot3 {
+    from{
+        
+        transform: rotate(-60deg) ;
+        
+    }
+    to{
+        
+        transform: rotate(300deg)  ;
+        
+    }
+    
+}
